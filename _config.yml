@@ -1,0 +1,9 @@
+title: Laghaim Client Archive
+description: >-
+  라그하임 초기 클라이언트·패치·설치본 보존 색인 및 제보 창구.
+  Preservation index and intake point for early Laghaim clients, patches and installers.
+theme: jekyll-theme-cayman
+lang: ko
+
+exclude:
+  - README.md
