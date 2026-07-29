@@ -78,7 +78,9 @@ laghaim.zip    game.zip           설치파일.zip
 
 ## 📮 제보하기
 
-**[→ 제보 양식 (준비 중)](#)**
+### **[→ 제보 양식 열기](https://docs.google.com/forms/d/e/1FAIpQLScQMDUgJS4p-qsTp4OJNXreU_17DwCP1ahTiRvbLs9CJbioYA/viewform)**
+
+로그인 없이 익명으로 제출됩니다. 필수 항목은 하나뿐입니다.
 
 ### 이런 조건입니다
 
@@ -166,7 +168,9 @@ Contents may be renamed. Look inside archives for `Laghaim.exe`, `Game.exe`, `Up
 
 **Anonymous submissions are fine.** You do not need to upload anything — telling us what you have is enough. You do not need to be sure it is Laghaim; we can identify it. If a contributor asks to remain anonymous, that is respected permanently.
 
-**[→ Submission form (coming soon)](#)**
+### **[→ Open the submission form](https://docs.google.com/forms/d/e/1FAIpQLScQMDUgJS4p-qsTp4OJNXreU_17DwCP1ahTiRvbLs9CJbioYA/viewform)**
+
+No sign-in required. Only one field is mandatory. The form is in Korean — if you prefer English, write in English in the free-text field and we will read it.
 
 ---
 

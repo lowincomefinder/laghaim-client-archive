@@ -26,7 +26,9 @@ Laghaim1015.exe   Laghaim1027.exe    Laghaim1117.exe   Laghaim1212.exe
 
 ## 제보
 
-익명으로 하셔도 됩니다. 파일을 올리실 필요 없고, 확실하지 않아도 됩니다.
+**→ [제보 양식](https://docs.google.com/forms/d/e/1FAIpQLScQMDUgJS4p-qsTp4OJNXreU_17DwCP1ahTiRvbLs9CJbioYA/viewform)**
+
+로그인 없이 익명으로 제출됩니다. 파일을 올리실 필요 없고, 확실하지 않아도 됩니다.
 자세한 내용은 위 페이지를 봐주십시오.
 
 ---
