@@ -15,9 +15,9 @@ title: Laghaim Client Archive
 
 2001년 7월 클로즈베타부터 2002년 초까지, 라그하임은 여러 개의 클라이언트와 패치를 배포했습니다. 그 파일들의 **이름과 배포 주소는 기록으로 남았지만, 파일 자체는 거의 남아 있지 않습니다.**
 
-당시 국내 배포 생태계가 통째로 사라졌기 때문입니다. 라이코스코리아·야후코리아·천리안·나우누리·엠파스가 문을 닫았고, 소리바다·푸르나 같은 P2P와 웹하드도 마찬가지입니다. 공식 다운로드 경로는 웹 아카이브에 페이지만 남고 **실제 바이너리는 단 하나도 살아남지 못했습니다.**
+당시 국내 배포 생태계가 통째로 사라졌기 때문입니다. 라이코스코리아·야후코리아·천리안·나우누리·엠파스가 문을 닫았고, 소리바다·푸르나 같은 P2P와 웹하드도 마찬가지입니다. 공식 다운로드 경로는 웹 아카이브에 페이지만 남았고, **그 경로에서 초기 한국 클라이언트 바이너리가 직접 회수된 사례는 아직 확인되지 않았습니다.**
 
-지금까지 확인된 초기 클라이언트는 **예외 없이 CD라는 물리 매체를 통해서만** 발견됐습니다. 잡지 부록 CD, 해외판 패키지 CD 같은 것들입니다. 누군가의 하드디스크나 CD-R에 남아 있을 가능성은 있지만, 그건 검색으로 찾을 수 없습니다.
+현재까지 이 프로젝트가 확보한 초기 클라이언트는 **모두 잡지 부록이나 해외 패키지 CD 계통에서** 발견됐습니다. 누군가의 하드디스크나 CD-R에 남아 있을 가능성은 있지만, 그건 검색으로 찾기 어렵습니다.
 
 **그래서 찾아다니는 대신, 찾아올 수 있는 좌표를 만들었습니다.**
 
@@ -80,7 +80,7 @@ laghaim.zip    game.zip           설치파일.zip
 
 ### **[→ 제보 양식 열기](https://docs.google.com/forms/d/e/1FAIpQLScQMDUgJS4p-qsTp4OJNXreU_17DwCP1ahTiRvbLs9CJbioYA/viewform)**
 
-로그인 없이 익명으로 제출됩니다. 필수 항목은 하나뿐입니다.
+로그인 없이 익명으로 제출됩니다. 필수 항목은 하나뿐이며, 연락 방법은 회신을 원하는 경우에만 선택적으로 남기면 됩니다.
 
 ### 이런 조건입니다
 
@@ -136,9 +136,9 @@ laghaim.zip    game.zip           설치파일.zip
 
 ### Why
 
-Laghaim was a Korean 3D MMORPG that entered closed beta in July 2001. The filenames and download hosts of its early clients survive in archived web pages — **but the binaries do not.** The Korean distribution ecosystem of that era (portals, P2P networks, file lockers, community boards) is essentially gone.
+Laghaim was a Korean 3D MMORPG that entered closed beta in July 2001. The filenames and download hosts of its early clients survive in archived web pages, **but no early Korean client binary has yet been recovered directly from those archived download routes.** The Korean distribution ecosystem of that era (portals, P2P networks, file lockers, community boards) is essentially gone.
 
-Every early client recovered so far came from **physical media** — magazine cover discs, retail CDs — never from a surviving download link.
+Every early client recovered by this project so far came from **physical-media lineages** — magazine cover discs and overseas package CDs — rather than a surviving official download link.
 
 So instead of searching outward, this page exists as a fixed coordinate that someone holding a copy can find.
 
@@ -170,8 +170,8 @@ Contents may be renamed. Look inside archives for `Laghaim.exe`, `Game.exe`, `Up
 
 ### **[→ Open the submission form](https://docs.google.com/forms/d/e/1FAIpQLScQMDUgJS4p-qsTp4OJNXreU_17DwCP1ahTiRvbLs9CJbioYA/viewform)**
 
-No sign-in required. Only one field is mandatory. The form is in Korean — if you prefer English, write in English in the free-text field and we will read it.
+No sign-in required. Only one field is mandatory. Contact details are optional and only needed if you want a reply. The form is in Korean — if you prefer English, write in English in the free-text field and we will read it.
 
 ---
 
-*최종 갱신 2026-07-30 · Last updated 2026-07-30*
+*최종 갱신 2026-08-02 · Last updated 2026-08-02*
