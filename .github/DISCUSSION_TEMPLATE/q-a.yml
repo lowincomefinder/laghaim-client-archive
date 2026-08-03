@@ -1,0 +1,47 @@
+title: "[질문] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        초기 라그하임의 버전, 맵, 콘텐츠, 스크린샷, 자료 식별과 관련된 질문을 남겨 주십시오. 확실하지 않은 추정도 질문으로 제시할 수 있습니다.
+
+  - type: input
+    id: question
+    attributes:
+      label: 핵심 질문
+      placeholder: 예: 이 스크린샷의 샤일론은 어느 시기 버전인가요?
+    validations:
+      required: true
+
+  - type: input
+    id: period_region
+    attributes:
+      label: 추정 시기·서비스 지역
+      placeholder: 예: 2002년 초 한국판으로 추정
+
+  - type: textarea
+    id: known
+    attributes:
+      label: 현재 알고 있는 사실
+      description: 직접 확인한 정보와 추정한 정보를 구분해 적어 주십시오.
+      placeholder: |
+        확인한 사실:
+        추정:
+    validations:
+      required: true
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: 이미지·파일명·문서 등 단서
+      description: 공개 가능한 스크린샷과 사진을 붙여넣을 수 있습니다. 실행파일이나 설치본은 첨부하지 마십시오.
+
+  - type: checkboxes
+    id: public_scope
+    attributes:
+      label: 공개 범위 확인
+      options:
+        - label: 개인정보와 계정정보를 제거했습니다.
+          required: true
+        - label: 게임 실행파일·설치본·패치·서버파일을 직접 첨부하지 않았습니다.
+          required: true
