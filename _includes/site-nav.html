@@ -1,0 +1,14 @@
+{% assign current_url = page.url | default: '/' %}
+<nav class="site-nav" aria-label="주요 메뉴">
+  <div class="site-nav__inner">
+    <a class="site-nav__brand{% if current_url == '/' or current_url == '/index.html' %} is-active{% endif %}" href="{{ '/' | relative_url }}">Laghaim Archive</a>
+    <div class="site-nav__links">
+      <a{% if current_url contains 'ACTIVITY' %} class="is-active"{% endif %} href="{{ '/ACTIVITY.html' | relative_url }}">조사 현황</a>
+      <a{% if current_url contains 'COMMUNITY_MEMORY' %} class="is-active"{% endif %} href="{{ '/COMMUNITY_MEMORY.html' | relative_url }}">집단기억</a>
+      <a{% if current_url contains 'DISCUSSIONS' %} class="is-active"{% endif %} href="{{ '/DISCUSSIONS.html' | relative_url }}">토론 게시판</a>
+      <a href="https://github.com/lowincomefinder/laghaim-client-archive/issues">공개 기록</a>
+      <a href="https://github.com/lowincomefinder/laghaim-client-archive/issues/new/choose">공개 제보</a>
+      <a class="site-nav__cta" href="https://docs.google.com/forms/d/e/1FAIpQLScQMDUgJS4p-qsTp4OJNXreU_17DwCP1ahTiRvbLs9CJbioYA/viewform">익명 제보</a>
+    </div>
+  </div>
+</nav>
