@@ -5,5 +5,13 @@ description: >-
 theme: jekyll-theme-cayman
 lang: ko
 
+show_downloads: false
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+
 exclude:
   - README.md
