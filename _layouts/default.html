@@ -24,6 +24,35 @@
     {% include site-nav.html %}
 
     <main id="content" class="main-content" role="main">
+      {% if page.url == '/' or page.url == '/index.html' %}
+      <section class="action-grid" aria-label="주요 바로가기">
+        <a class="action-card" href="{{ '/ACTIVITY.html' | relative_url }}">
+          <strong>조사 현황</strong>
+          <span>현재 수색 우선순위와 최근 조사·정정 내용을 확인합니다.</span>
+        </a>
+        <a class="action-card" href="{{ '/COMMUNITY_MEMORY.html' | relative_url }}">
+          <strong>집단기억 기록</strong>
+          <span>직접기억·전언·스크린샷·문서의 구분 원칙을 확인합니다.</span>
+        </a>
+        <a class="action-card" href="{{ '/DISCUSSIONS.html' | relative_url }}">
+          <strong>토론 게시판</strong>
+          <span>기억과 자료를 질문하고 여러 이용자와 대화하는 공간입니다.</span>
+        </a>
+        <a class="action-card" href="https://github.com/lowincomefinder/laghaim-client-archive/issues">
+          <strong>공개 기록</strong>
+          <span>구조화된 수색 표적, 식별 요청과 검증 기록을 봅니다.</span>
+        </a>
+        <a class="action-card" href="https://github.com/lowincomefinder/laghaim-client-archive/issues/new/choose">
+          <strong>공개 제보</strong>
+          <span>스크린샷·파일목록·기억을 정해진 양식으로 공개 제출합니다.</span>
+        </a>
+        <a class="action-card" href="https://docs.google.com/forms/d/e/1FAIpQLScQMDUgJS4p-qsTp4OJNXreU_17DwCP1ahTiRvbLs9CJbioYA/viewform">
+          <strong>익명 제보</strong>
+          <span>GitHub 계정 없이 신원과 출처를 공개하지 않고 제보합니다.</span>
+        </a>
+      </section>
+      {% endif %}
+
       {{ content }}
 
       <footer class="site-footer">
