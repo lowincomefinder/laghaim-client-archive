@@ -1,14 +1,39 @@
+---
+title: 라그하임 집단기억 기록소 안내
+---
+
 # 라그하임 집단기억 기록소 안내
 
 이 기록소는 2001~2003년 라그하임의 클라이언트, 패치, 맵, UI, 운영 상황, 배포 경로에 관한 **개인 기억과 남아 있는 시각자료를 공개적으로 축적**하기 위한 공간입니다.
 
-게임 파일 자체를 배포하는 곳이 아닙니다. 실행파일·압축파일·서버파일은 공개 이슈에 올리지 마십시오.
+게임 파일 자체를 배포하는 곳이 아닙니다. 실행파일·압축파일·서버파일은 공개 게시물에 올리지 마십시오.
 
 ## 어디에 제보할 것인가
 
-- **공개해도 되는 기억·스크린샷·사진·파일목록**: [공개 제보 양식](https://github.com/lowincomefinder/laghaim-client-archive/issues/new/choose)
-- **익명 또는 비공개가 필요한 제보**: [익명 Google Form](https://docs.google.com/forms/d/e/1FAIpQLScQMDUgJS4p-qsTp4OJNXreU_17DwCP1ahTiRvbLs9CJbioYA/viewform)
-- **기존 공개 기록 보기**: [Issues 목록](https://github.com/lowincomefinder/laghaim-client-archive/issues)
+<div class="action-grid">
+  <a class="action-card" href="https://github.com/lowincomefinder/laghaim-client-archive/discussions">
+    <strong>토론 게시판</strong>
+    <span>기억, 질문, 스크린샷과 지역판 차이를 다른 이용자와 자유롭게 대화합니다.</span>
+  </a>
+  <a class="action-card" href="https://github.com/lowincomefinder/laghaim-client-archive/issues/new/choose">
+    <strong>구조화된 공개 제보</strong>
+    <span>특정 자료의 식별, 파일목록, 수색 표적과 검증 상태를 기록합니다.</span>
+  </a>
+  <a class="action-card" href="https://docs.google.com/forms/d/e/1FAIpQLScQMDUgJS4p-qsTp4OJNXreU_17DwCP1ahTiRvbLs9CJbioYA/viewform">
+    <strong>익명·비공개 제보</strong>
+    <span>GitHub 계정을 사용하지 않거나 신원과 출처 공개를 원하지 않을 때 사용합니다.</span>
+  </a>
+</div>
+
+### 공간별 역할
+
+| 공간 | 적합한 내용 |
+|---|---|
+| **Discussions** | 여러 사람이 이어가는 질문·답변, 기억 공유, 이미지 비교, 가설 토론 |
+| **Issues** | 특정 자료의 식별, 수색 표적, 검증 상태와 후속 작업을 장기 추적하는 기록 |
+| **익명 Google Form** | 신원·출처를 공개하지 않는 제보, 공개 게시가 부담스러운 단서 |
+
+토론에서 의미 있는 단서가 확인되면 별도의 Issue로 옮겨 출처와 검증 상태를 관리합니다.
 
 ## 기록 상태
 
@@ -29,7 +54,7 @@
 
 ## 스크린샷과 사진
 
-공개 이슈 작성창에 이미지를 붙여넣거나 끌어다 놓을 수 있습니다.
+Discussions와 Issues 작성창에는 이미지를 붙여넣거나 끌어다 놓을 수 있습니다.
 
 가능하면 함께 적어 주십시오.
 
@@ -48,7 +73,7 @@
 - 제3자의 실명이나 연락처를 동의 없이 공개
 - 불법 접근 또는 침해를 통해 얻은 자료
 
-파일을 보유하고 있다는 사실만 알려도 충분합니다. 원본 전달은 공개 이슈가 아닌 별도 협의 대상으로 둡니다.
+파일을 보유하고 있다는 사실만 알려도 충분합니다. 원본 전달은 공개 게시물이 아닌 별도 협의 대상으로 둡니다.
 
 ## 운영 원칙
 
@@ -56,4 +81,5 @@
 2. 후속 증거가 나오면 기존 기록을 수정하거나 반증 상태를 남깁니다.
 3. 제공자가 익명을 원하면 신원을 공개하지 않습니다.
 4. 기억과 문서를 섞어 하나의 확정 사실처럼 만들지 않습니다.
-5. 공개 기록은 장기적으로 검색 가능한 조사 단서로 보존합니다.
+5. 대화는 Discussions에서, 검증과 추적은 Issues에서 관리합니다.
+6. 공개 기록은 장기적으로 검색 가능한 조사 단서로 보존합니다.
