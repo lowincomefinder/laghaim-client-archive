@@ -1,3 +1,7 @@
+---
+title: 공개 조사 활동 기록
+---
+
 # 공개 조사 활동 기록
 
 이 문서는 방문자가 프로젝트의 현재 움직임을 빠르게 파악할 수 있도록 유지하는 공개 로그입니다. 내부 분석 전체가 아니라 확인된 진행 방향과 공개 가능한 결과를 기록합니다.
@@ -20,6 +24,10 @@
 
 | 날짜 | 상태 | 내용 |
 |---|---|---|
+| 2026-08-04 | UI | 모든 GitHub Pages 문서에 상단 고정형 메뉴와 모바일 가로 메뉴 적용 |
+| 2026-08-04 | UI | 메인 화면에 조사 현황·집단기억·토론·공개 기록·제보 바로가기 카드 추가 |
+| 2026-08-04 | 구축 | GitHub Discussions 안내 페이지와 `General`·`Q&A` 토론 양식 준비 |
+| 2026-08-04 | 구분 | Discussions는 대화, Issues는 검증 추적, Google Form은 익명 제보로 역할 분리 |
 | 2026-08-03 | 교정 | 오픈베타 종료 경계와 유료화 공식 개시 시각을 분리 표기 |
 | 2026-08-03 | 확장 | `1212` 이후 ERA-A 전량을 준최우선 수색 구간으로 승격 |
 | 2026-08-03 | 확장 | 2002년 나머지 자료를 고급 비교자료로 수색 범위에 명시 |
@@ -38,4 +46,6 @@
 - 과거 다운로드 주소, PC방 배포 경로, 운영 관련 전언
 - 기존 가설을 지지하거나 반박하는 독립 증언
 
-공개 제보는 [GitHub Issues](https://github.com/lowincomefinder/laghaim-client-archive/issues/new/choose), 익명 제보는 [Google Form](https://docs.google.com/forms/d/e/1FAIpQLScQMDUgJS4p-qsTp4OJNXreU_17DwCP1ahTiRvbLs9CJbioYA/viewform)을 사용합니다.
+<a class="action-button" href="https://github.com/lowincomefinder/laghaim-client-archive/discussions">토론 게시판</a>
+<a class="action-button action-button--secondary" href="https://github.com/lowincomefinder/laghaim-client-archive/issues/new/choose">구조화된 공개 제보</a>
+<a class="action-button action-button--secondary" href="https://docs.google.com/forms/d/e/1FAIpQLScQMDUgJS4p-qsTp4OJNXreU_17DwCP1ahTiRvbLs9CJbioYA/viewform">익명 제보</a>
