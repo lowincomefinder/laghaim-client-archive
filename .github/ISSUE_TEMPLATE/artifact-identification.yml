@@ -1,0 +1,65 @@
+name: 자료·버전 식별 요청
+description: 오래된 CD, 폴더, 파일목록, 설치화면 또는 클라이언트의 시기와 계통을 함께 판별합니다.
+title: "[식별] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        원본 게임 파일은 공개 첨부하지 마십시오. 파일명·크기·날짜·폴더 구조·해시·스크린샷 같은 식별정보만 올려 주십시오.
+
+  - type: dropdown
+    id: material_type
+    attributes:
+      label: 자료 종류
+      options:
+        - 잡지 부록 CD 또는 패키지 CD
+        - CD-R·DVD-R 또는 오래된 저장매체
+        - 하드디스크·백업 폴더
+        - 압축파일의 파일목록
+        - 설치 또는 실행 화면
+        - 스크린샷·문서·게시글 캡처
+        - 기타
+    validations:
+      required: true
+
+  - type: textarea
+    id: visible_markings
+    attributes:
+      label: 표기와 발견 경위
+      description: 매체 표면, 잡지명·호수, 폴더명, 발견 장소와 대략적인 보관 이력을 적으십시오.
+    validations:
+      required: true
+
+  - type: textarea
+    id: metadata
+    attributes:
+      label: 파일·폴더 정보
+      description: 파일명, 크기, 수정시각, 폴더 구조, SHA-256 등 확인 가능한 메타데이터를 적으십시오.
+      placeholder: |
+        파일명:
+        크기:
+        수정시각:
+        상위·인접 파일:
+        SHA-256:
+
+  - type: textarea
+    id: images
+    attributes:
+      label: 공개 가능한 사진·스크린샷
+      description: 매체 사진, 디렉터리 목록, 설치화면 등을 붙여넣거나 끌어다 놓으십시오. 개인정보와 제품키는 가리십시오.
+
+  - type: textarea
+    id: suspected_period
+    attributes:
+      label: 추정 시기·지역과 그 이유
+      description: 추정이 없어도 됩니다. 추정과 실제 확인사항은 분리해서 적으십시오.
+
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: 공개 범위 확인
+      options:
+        - label: 실행파일·압축파일·설치본·서버파일을 이 이슈에 직접 첨부하지 않았습니다.
+          required: true
+        - label: 계정정보·제품키·개인정보를 제거하거나 가렸습니다.
+          required: true
