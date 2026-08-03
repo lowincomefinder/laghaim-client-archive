@@ -11,8 +11,21 @@ GitHub Discussions는 개발 작업을 추적하는 Issues보다 일반 이용�
 당시 플레이 기억, 맵과 콘텐츠의 모습, 스크린샷, 지역판 차이, 과거 배포 경로와 소문을 서로 질문하고 보완하는 공간입니다. 확정된 결과와 구조화된 자료 식별 기록은 별도로 Issues에 남깁니다.
 </div>
 
-<a class="action-button" href="https://github.com/lowincomefinder/laghaim-client-archive/discussions">토론 게시판 열기</a>
+<a class="action-button" href="https://github.com/lowincomefinder/laghaim-client-archive/discussions">토론 게시판 전체 보기</a>
 <a class="action-button action-button--secondary" href="https://github.com/lowincomefinder/laghaim-client-archive/issues">구조화된 공개 기록 보기</a>
+
+## 먼저 볼 토론
+
+<div class="action-grid">
+  <a class="action-card" href="https://github.com/lowincomefinder/laghaim-client-archive/discussions/3">
+    <strong>게시판 개설 안내</strong>
+    <span>Discussions·Issues·익명 제보의 역할과 공개 원칙을 확인합니다.</span>
+  </a>
+  <a class="action-card" href="https://github.com/lowincomefinder/laghaim-client-archive/discussions/4">
+    <strong>2001 CBT~2002 ERA-A 수색</strong>
+    <span>클로즈베타, 1212 이전, 1212 이후 ERA-A 자료와 기억을 모읍니다.</span>
+  </a>
+</div>
 
 ## 어떤 글을 올릴 수 있는가
 
