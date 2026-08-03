@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: 'ko' }}">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% seo %}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+  </head>
+  <body>
+    <a class="skip-link" href="#content">본문으로 건너뛰기</a>
+
+    <header class="page-header" role="banner">
+      <h1 class="project-name">{{ site.title | default: page.title }}</h1>
+      <h2 class="project-tagline">{{ site.description }}</h2>
+      {% if site.github.is_project_page %}
+        <a href="{{ site.github.repository_url }}" class="btn">GitHub 저장소</a>
+      {% endif %}
+    </header>
+
+    {% include site-nav.html %}
+
+    <main id="content" class="main-content" role="main">
+      {{ content }}
+
+      <footer class="site-footer">
+        <span class="site-footer-owner">
+          <a href="{{ '/' | relative_url }}">Laghaim Client Archive</a> · 초기 라그하임 자료의 존재·출처·계보를 기록합니다.
+        </span>
+      </footer>
+    </main>
+  </body>
+</html>
