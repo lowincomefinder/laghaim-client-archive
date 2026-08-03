@@ -1,0 +1,74 @@
+name: 집단기억·스크린샷 제보
+description: 2001~2003년 라그하임에 관한 직접 기억, 전언, 스크린샷 또는 사진을 기록합니다.
+title: "[기억] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        실행파일·설치본·패치·서버파일은 첨부하지 마십시오. 공개 가능한 스크린샷과 사진은 아래 입력칸에 붙여넣거나 끌어다 놓을 수 있습니다.
+
+  - type: dropdown
+    id: evidence_status
+    attributes:
+      label: 기록 상태
+      description: 현재 내용에 가장 가까운 상태를 선택하십시오.
+      options:
+        - 직접기억
+        - 전언
+        - 스크린샷 확인
+        - 문서 확인
+        - 소문
+        - 둘 이상이 섞여 있음
+    validations:
+      required: true
+
+  - type: input
+    id: period
+    attributes:
+      label: 시기
+      description: 정확하지 않아도 됩니다. 예: 2001년 여름, 유료화 직전, 2003년경
+      placeholder: 2001년 7~8월경
+    validations:
+      required: true
+
+  - type: input
+    id: region_server
+    attributes:
+      label: 서비스 지역·서버
+      description: 한국판·일본판·중국판, 서버명 등을 적으십시오. 모르면 비워도 됩니다.
+      placeholder: 한국판 / 갤럭시 서버
+
+  - type: textarea
+    id: account
+    attributes:
+      label: 기억하거나 확인한 내용
+      description: 직접 본 것, 다른 사람에게 들은 것, 나중에 추론한 것을 가능한 한 분리해 적으십시오.
+      placeholder: |
+        직접 기억:
+        전언:
+        나중의 추론:
+    validations:
+      required: true
+
+  - type: textarea
+    id: visual_material
+    attributes:
+      label: 스크린샷·사진
+      description: 공개 가능한 이미지를 이곳에 붙여넣거나 끌어다 놓으십시오. 원본 여부와 발견 경로도 적어 주십시오.
+      placeholder: 이미지가 없다면 "없음"이라고 적어도 됩니다.
+
+  - type: textarea
+    id: context
+    attributes:
+      label: 당시 정황과 식별 단서
+      description: 맵, NPC, UI, 아이템, 설치화면, 파일명, 잡지명, CD 표기 등 기억나는 단서를 적으십시오.
+
+  - type: checkboxes
+    id: public_scope
+    attributes:
+      label: 공개 범위 확인
+      options:
+        - label: 이 글에 게임 실행파일·설치본·패치·서버파일 또는 개인정보를 첨부하지 않았습니다.
+          required: true
+        - label: 불확실한 부분을 확정 사실처럼 쓰지 않았습니다.
+          required: true
