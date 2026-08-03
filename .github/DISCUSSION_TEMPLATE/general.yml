@@ -1,0 +1,62 @@
+title: "[기억·자료] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        라그하임의 초기 기억, 스크린샷, 지역판 차이, 배포 경로와 관련된 대화를 남기는 공간입니다. 실행파일·설치본·패치·서버파일은 직접 첨부하지 마십시오.
+
+  - type: dropdown
+    id: record_type
+    attributes:
+      label: 내용의 성격
+      description: 가장 가까운 항목을 선택하십시오.
+      options:
+        - 직접기억
+        - 다른 사람에게 들은 전언
+        - 스크린샷·사진 확인
+        - 당시 문서·기사 확인
+        - 후대 자료를 바탕으로 한 추론
+        - 여러 성격이 섞여 있음
+    validations:
+      required: true
+
+  - type: input
+    id: period
+    attributes:
+      label: 관련 시기
+      description: 정확하지 않아도 됩니다.
+      placeholder: 예: 2001년 여름, 2002년 유료화 직전, 2003년경
+
+  - type: input
+    id: region
+    attributes:
+      label: 서비스 지역·서버
+      placeholder: 예: 한국판 갤럭시, 중국 사설서버, 일본 에타ーナルカオス
+
+  - type: textarea
+    id: details
+    attributes:
+      label: 기억하거나 확인한 내용
+      description: 직접 기억, 전언, 나중의 추론을 가능한 한 분리해 적어 주십시오.
+      placeholder: |
+        직접 기억:
+        전언:
+        나중의 추론:
+    validations:
+      required: true
+
+  - type: textarea
+    id: visual
+    attributes:
+      label: 공개 가능한 이미지·식별 단서
+      description: 스크린샷이나 사진을 붙여넣을 수 있습니다. 맵·NPC·UI·아이템·파일명 같은 단서도 함께 적어 주십시오.
+
+  - type: checkboxes
+    id: public_scope
+    attributes:
+      label: 공개 범위 확인
+      options:
+        - label: 개인정보와 계정정보를 제거했습니다.
+          required: true
+        - label: 게임 실행파일·설치본·패치·서버파일을 직접 첨부하지 않았습니다.
+          required: true
