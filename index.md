@@ -4,10 +4,21 @@ title: Laghaim Client Archive
 
 # 라그하임 초기 클라이언트 보존 색인
 
-**2001–2003년 라그하임(Laghaim) 클라이언트·패치·설치본의 계보를 정리하고, 남아 있는 자료의 제보를 받는 곳입니다.**
+**2001–2003년 라그하임(Laghaim) 클라이언트·패치·설치본의 계보를 정리하고, 남아 있는 자료와 집단기억의 제보를 받는 곳입니다.**
 
 > ### ⚠️ 여기에는 게임 파일이 없습니다
 > 이 페이지는 **어떤 파일이 존재했는지**를 기록한 색인입니다. 게임 클라이언트나 설치본을 배포하지 않습니다.
+
+---
+
+## 현재 조사 상태
+
+- **최우선 표적:** 2001년 7월 클로즈베타 `0702`·`0702a`·`0703`·`0704`
+- **병행 표적:** 2001년 8~12월 오픈베타 설치본과 수동 패치
+- **최근 공개 작업:** 집단기억·스크린샷 기록 골격과 자료 식별 양식 도입
+- **최종 갱신:** 2026-08-03
+
+**[→ 공개 조사 활동 기록](ACTIVITY.md)** · **[→ 집단기억 기록 원칙](COMMUNITY_MEMORY.md)** · **[→ 공개 기록 보기](https://github.com/lowincomefinder/laghaim-client-archive/issues)**
 
 ---
 
@@ -76,9 +87,26 @@ laghaim.zip    game.zip           설치파일.zip
 
 ---
 
-## 📮 제보하기
+## 🗂 집단기억·스크린샷 기록
 
-### **[→ 제보 양식 열기](https://docs.google.com/forms/d/e/1FAIpQLScQMDUgJS4p-qsTp4OJNXreU_17DwCP1ahTiRvbLs9CJbioYA/viewform)**
+클라이언트가 남아 있지 않더라도 당시 플레이 기억, 맵 구조, UI, NPC, 아이템, PC방 설치 경험, 중국·일본·한국 서비스에 관한 전언은 조사 단서가 될 수 있습니다.
+
+- **[→ 기억·스크린샷 공개 제보](https://github.com/lowincomefinder/laghaim-client-archive/issues/new?template=memory-report.yml)**
+- **[→ CD·폴더·파일목록·버전 식별 요청](https://github.com/lowincomefinder/laghaim-client-archive/issues/new?template=artifact-identification.yml)**
+- **[→ 공개 기록 전체 보기](https://github.com/lowincomefinder/laghaim-client-archive/issues)**
+- **[→ 기록 상태와 공개 원칙](COMMUNITY_MEMORY.md)**
+
+공개 기록에서는 `직접기억`, `전언`, `스크린샷 확인`, `문서 확인`, `바이너리 확인`, `교차확인`, `소문`, `반증됨`을 구분합니다. 기억과 추론을 섞어 확정 사실로 만들지 않습니다.
+
+공개 이슈 작성창에는 스크린샷과 사진을 붙여넣거나 끌어다 놓을 수 있습니다. **게임 실행파일·설치본·패치·서버파일은 공개 첨부하지 마십시오.**
+
+GitHub 계정을 사용하지 않거나 신원 비공개가 필요하면 아래 익명 제보 양식을 사용하십시오.
+
+---
+
+## 📮 익명·비공개 제보
+
+### **[→ 익명 제보 양식 열기](https://docs.google.com/forms/d/e/1FAIpQLScQMDUgJS4p-qsTp4OJNXreU_17DwCP1ahTiRvbLs9CJbioYA/viewform)**
 
 로그인 없이 익명으로 제출됩니다. 필수 항목은 하나뿐이며, 연락 방법은 회신을 원하는 경우에만 선택적으로 남기면 됩니다.
 
@@ -120,6 +148,7 @@ laghaim.zip    game.zip           설치파일.zip
 2. **출처를 기록합니다.** 무엇이 확인된 사실이고 무엇이 추정인지 구분합니다
 3. **익명을 존중합니다.** 밝히기 원치 않으면 밝히지 않습니다
 4. **오래 유지합니다.** 이 주소는 바뀌지 않습니다
+5. **기억의 상태를 표시합니다.** 직접기억·전언·소문과 문서·바이너리 확인을 구분합니다
 
 ---
 
@@ -129,10 +158,17 @@ laghaim.zip    game.zip           설치파일.zip
 
 ## Laghaim Client Archive
 
-**A preservation index for early Laghaim (라그하임) game clients, patches and installers (2001–2003), and an intake point for surviving copies.**
+**A preservation index for early Laghaim (라그하임) game clients, patches and installers (2001–2003), and an intake point for surviving copies and community memory.**
 
 > ### ⚠️ No game files are hosted here
 > This is an index of **what existed**. No clients or installers are distributed from this page.
+
+### Current focus
+
+- Highest priority: July 2001 closed-beta builds `0702`, `0702a`, `0703`, and `0704`
+- Parallel search: August–December 2001 open-beta installers and manual patches
+- Public activity log: [ACTIVITY.md](ACTIVITY.md)
+- Community memory policy: [COMMUNITY_MEMORY.md](COMMUNITY_MEMORY.md)
 
 ### Why
 
@@ -164,14 +200,22 @@ Also wanted: Korean game magazine cover discs (2001–2002), PDS/shareware CD du
 
 Contents may be renamed. Look inside archives for `Laghaim.exe`, `Game.exe`, `UpdateNew.exe`, `SvrList.lst`, `vtm.brn`, `bld.bld`.
 
-### Submitting
+### Public memory and screenshots
+
+- [Submit a memory or screenshot](https://github.com/lowincomefinder/laghaim-client-archive/issues/new?template=memory-report.yml)
+- [Request artifact or version identification](https://github.com/lowincomefinder/laghaim-client-archive/issues/new?template=artifact-identification.yml)
+- [Browse public records](https://github.com/lowincomefinder/laghaim-client-archive/issues)
+
+Public reports distinguish direct memory, hearsay, screenshots, contemporary documents, binary confirmation, cross-confirmation, rumor, and disproven claims. Do not attach executables, installers, patches, server files, or source code to a public issue.
+
+### Anonymous submission
 
 **Anonymous submissions are fine.** You do not need to upload anything — telling us what you have is enough. You do not need to be sure it is Laghaim; we can identify it. If a contributor asks to remain anonymous, that is respected permanently.
 
-### **[→ Open the submission form](https://docs.google.com/forms/d/e/1FAIpQLScQMDUgJS4p-qsTp4OJNXreU_17DwCP1ahTiRvbLs9CJbioYA/viewform)**
+### **[→ Open the anonymous submission form](https://docs.google.com/forms/d/e/1FAIpQLScQMDUgJS4p-qsTp4OJNXreU_17DwCP1ahTiRvbLs9CJbioYA/viewform)**
 
 No sign-in required. Only one field is mandatory. Contact details are optional and only needed if you want a reply. The form is in Korean — if you prefer English, write in English in the free-text field and we will read it.
 
 ---
 
-*최종 갱신 2026-08-02 · Last updated 2026-08-02*
+*최종 갱신 2026-08-03 · Last updated 2026-08-03*
