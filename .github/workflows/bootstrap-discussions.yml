@@ -1,0 +1,85 @@
+name: Bootstrap Discussions
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - .github/workflows/bootstrap-discussions.yml
+
+permissions:
+  contents: read
+  discussions: write
+
+jobs:
+  bootstrap:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Enable repository Discussions
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPOSITORY: ${{ github.repository }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          OWNER="${REPOSITORY%%/*}"
+          NAME="${REPOSITORY#*/}"
+
+          REPOSITORY_ID="$(gh api graphql \
+            -f query='query($owner:String!,$name:String!){repository(owner:$owner,name:$name){id}}' \
+            -f owner="$OWNER" \
+            -f name="$NAME" \
+            --jq '.data.repository.id')"
+
+          gh api graphql \
+            -f query='mutation($repositoryId:ID!){updateRepository(input:{repositoryId:$repositoryId,hasDiscussionsEnabled:true}){repository{hasDiscussionsEnabled}}}' \
+            -f repositoryId="$REPOSITORY_ID"
+
+          ENABLED="$(gh api graphql \
+            -f query='query($owner:String!,$name:String!){repository(owner:$owner,name:$name){hasDiscussionsEnabled}}' \
+            -f owner="$OWNER" \
+            -f name="$NAME" \
+            --jq '.data.repository.hasDiscussionsEnabled')"
+
+          test "$ENABLED" = "true"
+
+      - name: Create first welcome discussion
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPOSITORY: ${{ github.repository }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          OWNER="${REPOSITORY%%/*}"
+          NAME="${REPOSITORY#*/}"
+
+          DATA="$(gh api graphql \
+            -f query='query($owner:String!,$name:String!){repository(owner:$owner,name:$name){id discussionCategories(first:20){nodes{id name slug}}}}' \
+            -f owner="$OWNER" \
+            -f name="$NAME")"
+
+          REPOSITORY_ID="$(jq -r '.data.repository.id' <<<"$DATA")"
+          CATEGORY_ID="$(jq -r '.data.repository.discussionCategories.nodes[] | select(.slug == "general") | .id' <<<"$DATA" | head -n 1)"
+
+          if [ -z "$CATEGORY_ID" ] || [ "$CATEGORY_ID" = "null" ]; then
+            echo "General discussion category was not found."
+            exit 1
+          fi
+
+          EXISTING="$(gh api graphql \
+            -f query='query($owner:String!,$name:String!){repository(owner:$owner,name:$name){discussions(first:20){nodes{title}}}}' \
+            -f owner="$OWNER" \
+            -f name="$NAME" \
+            --jq '[.data.repository.discussions.nodes[].title] | any(. == "라그하임 기억·자료 토론 게시판을 열었습니다")')"
+
+          if [ "$EXISTING" = "true" ]; then
+            echo "Welcome discussion already exists."
+            exit 0
+          fi
+
+          gh api graphql \
+            -f query='mutation($repositoryId:ID!,$categoryId:ID!,$title:String!,$body:String!){createDiscussion(input:{repositoryId:$repositoryId,categoryId:$categoryId,title:$title,body:$body}){discussion{url}}}' \
+            -f repositoryId="$REPOSITORY_ID" \
+            -f categoryId="$CATEGORY_ID" \
+            -f title='라그하임 기억·자료 토론 게시판을 열었습니다' \
+            -f body='초기 라그하임의 기억, 스크린샷, 지역판 차이, 배포 경로와 소문을 자유롭게 이야기하는 공간입니다. 대화에서 확인된 핵심 단서는 Issues로 옮겨 출처와 검증 상태를 장기 관리합니다. 실행파일·설치본·패치·서버파일은 공개 첨부하지 마십시오.'
