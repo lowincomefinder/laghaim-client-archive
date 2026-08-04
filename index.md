@@ -17,7 +17,7 @@ title: Laghaim Client Archive
 - **준최우선:** `1212` 이후부터 ERA-A 종료 경계인 **2002-05-28**까지의 모든 클라이언트와 패치 상태
 - **고급 비교자료:** 2002년 나머지 구간의 한국 클라이언트·패치·설치매체 전량
 - **최근 공개 작업:** 오픈베타 종료 경계와 ERA-A 수색 우선순위 교정
-- **최종 갱신:** 2026-08-03
+- **최종 갱신:** 2026-08-05
 
 **[→ 공개 조사 활동 기록](ACTIVITY.md)** · **[→ 집단기억 기록 원칙](COMMUNITY_MEMORY.md)** · **[→ 공개 기록 보기](https://github.com/lowincomefinder/laghaim-client-archive/issues)**
 
@@ -41,7 +41,7 @@ title: Laghaim Client Archive
 
 | 파일명 | 배포일 | 비고 |
 |---|---|---|
-| `laghaim0702.exe` | 2001-07-02 | 최초 클로즈베타 클라이언트 |
+| `laghaim0702.exe` | 2001-07-02 | 최초 클로즈베타 클라이언트 (배포 용량 약 28MB, 15,000명 참여) |
 | `laghaim0702a.exe` | 2001-07-03 | 비디오카드 충돌 수정본 |
 | `Laghaim0703.exe` | 2001-07-04 | 자동패치 기능 추가본 |
 | `LaghaimPatch0704.exe` | 2001-07-04 | 수동 패치 |
@@ -185,4 +185,4 @@ No game files are hosted here. Do not attach executables, installers, patches, s
 
 ---
 
-*최종 갱신 2026-08-03 · Last updated 2026-08-03*
+*최종 갱신 2026-08-05 · Last updated 2026-08-05*
